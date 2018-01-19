@@ -3,7 +3,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http, {
   perMessageDeflate: false
 });
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 80;
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
